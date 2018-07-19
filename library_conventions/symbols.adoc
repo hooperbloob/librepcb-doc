@@ -1,0 +1,33 @@
+[#libraryconventions-symbols]
+=== Symbol Conventions
+
+[NOTE]
+====
+These guidelines are not yet complete. Help us create sensible conventions
+https://github.com/LibrePCB/librepcb-doc/issues?q=is%3Aissue+label%3A%22Conventions%3A+Symbols%22[on GitHub]!
+====
+
+==== Pin Placement
+
+Preferrably, don't place pins at the top or bottom. Place them on the left or
+right side of a symbol instead.
+
+==== Pin Order
+
+When designing symbols, pins can be ordered in one of four ways:
+
+1. *Sorted logically*
+  - Advantage: Schematics are easily readable because they represent the
+    _logic_ of the circuit
+  - This should probably be the default choice in most cases
+2. *On both sides, sorted numerically counterclockwise*
+  - Advantage: Can be solved using very generic symbols. Only one symbol per
+    pin count is required (e.g. "IC with 10 Pins", "IC with 12 Pins", "IC with
+    14 Pins", …)
+3. *Split logically* (one dedicated symbol for each logical part of the component)
+  - Advantage: Especially useful for very large components (>100 Pins) to keep
+    schematics readable 
+4. *Matching the physical design*
+  - This is rarely useful, since a symbol should be a logical representation
+    of the electrical connections, but there may be cases where it makes
+    sense.
